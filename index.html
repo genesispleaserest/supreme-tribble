@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RunLoop</title>
+    <meta name="description" content="RunLoop builds reliable workflow automation using n8n and Zapier. CRM syncs, lead capture, marketing ops, e-commerce, analytics, support automation, and more." />
+    <meta property="og:title" content="RunLoop" />
+    <meta property="og:description" content="RunLoop delivers done-for-you workflow automation using n8n and Zapier." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0b5cff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "RunLoop",
+        "url": "",
+        "areaServed": "Global",
+        "sameAs": [],
+        "serviceType": "Workflow Automation",
+        "knowsAbout": ["n8n", "Zapier", "CRM automation", "Marketing automation", "E-commerce automation", "Support automation", "Data pipelines"],
+        "founder": {"@type": "Person", "name": "Ibrahim Oyedele"}
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="#">RunLoop</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <nav class="menu" aria-label="Primary">
+          <a href="#services">Services</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#process">Process</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a class="btn btn-primary" href="#contact">Get a Quote</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>RunLoop automates your business.</h1>
+          <p class="lead">RunLoop designs, builds, and maintains reliable automations for sales, marketing, operations, and support so your team scales without the busywork.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#contact">Book a free consult</a>
+            <a class="btn btn-outline" href="#services">Explore services</a>
+          </div>
+          <ul class="trust">
+            <li>Certified Zapier Experts</li>
+            <li>Production‑grade n8n workflows</li>
+            <li>SLA options for ongoing support</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="container">
+          <h2>Most‑Requested Services</h2>
+          <p class="section-sub">High‑impact automations we build most often with n8n & Zapier.</p>
+
+          <div class="grid services">
+            <article class="card">
+              <h3>Lead Capture & Routing</h3>
+              <p>Instantly capture leads from forms and ads, score/enrich them, and route to the right rep with SLAs.</p>
+              <ul>
+                <li>Zapier: Facebook Lead Ads → HubSpot/Pipedrive</li>
+                <li>n8n: Clearbit/People Data Labs enrichment + round‑robin</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>CRM Hygiene & Sync</h3>
+              <p>Keep contacts, companies, and deals in sync across CRMs and tools with robust dedupe logic.</p>
+              <ul>
+                <li>Zapier: Salesforce ↔ HubSpot basic field sync</li>
+                <li>n8n: Multi‑system merges, backfills, conflict resolution</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Marketing Automation</h3>
+              <p>Trigger campaigns and personalize messaging from product usage, events, and segmentation.</p>
+              <ul>
+                <li>Zapier: Stripe/Webhooks → Mailchimp/ActiveCampaign</li>
+                <li>n8n: Branching journeys with on‑event scoring</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>E‑commerce Ops</h3>
+              <p>Automate order processing, inventory sync, and fulfillment alerts across storefronts and ERPs.</p>
+              <ul>
+                <li>Zapier: Shopify → Google Sheets/Slack notices</li>
+                <li>n8n: Shopify ↔ ERP stock sync + SLA alerts</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Support Triage</h3>
+              <p>Detect priority tickets, auto‑assign, and notify stakeholders across helpdesk and chat.</p>
+              <ul>
+                <li>Zapier: Zendesk → Slack/MS Teams alerts</li>
+                <li>n8n: Sentiment/keyword routing + on‑call rotation</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Analytics & Reporting</h3>
+              <p>Centralize data to Sheets/Airtable/DBs and schedule summary digests with KPIs.</p>
+              <ul>
+                <li>Zapier: Scheduled KPI snapshots → Email/Slack</li>
+                <li>n8n: ETL pipelines to databases and BI tools</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Finance & Invoicing</h3>
+              <p>Generate invoices, reconcile payments, and notify on failed charges or overdue accounts.</p>
+              <ul>
+                <li>Zapier: Stripe → QuickBooks/Xero invoicing</li>
+                <li>n8n: Dunning workflows + collections routing</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>HR & Recruiting</h3>
+              <p>Automate candidate intake, interview scheduling, and onboarding checklists.</p>
+              <ul>
+                <li>Zapier: Typeform → Greenhouse/Lever + calendar</li>
+                <li>n8n: Multi‑stage pipelines with approvals</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Docs & Email Parsing</h3>
+              <p>Parse PDFs/emails, extract data, and push to CRMs or spreadsheets with error handling.</p>
+              <ul>
+                <li>Zapier: Mail parser → Airtable/Sheets</li>
+                <li>n8n: OCR + validation + exception routing</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="integrations">
+            <h4>Popular Integrations</h4>
+            <p>HubSpot, Salesforce, Pipedrive, Shopify, WooCommerce, Stripe, QuickBooks, Xero, Google Sheets, Airtable, Notion, Slack, Microsoft Teams, Gmail, Outlook, Asana, Monday.com, Trello, Intercom, Zendesk, Mailchimp, ActiveCampaign, Facebook Lead Ads, LinkedIn, and 100+ more.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section alt">
+        <div class="container">
+          <h2>How We Work</h2>
+          <div class="timeline">
+            <div>
+              <h3>1) Discovery</h3>
+              <p>Clarify goals, systems, and constraints. Identify quick wins and longer‑term roadmap.</p>
+            </div>
+            <div>
+              <h3>2) Design</h3>
+              <p>We propose architecture, data models, failure handling, and SLAs to match your needs.</p>
+            </div>
+            <div>
+              <h3>3) Build</h3>
+              <p>Implement and test in a staging workspace (n8n/Zapier), then promote to production.</p>
+            </div>
+            <div>
+              <h3>4) Maintain</h3>
+              <p>Monitor, alert, and iterate—covering platform changes, API updates, and new use cases.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="section">
+        <div class="container">
+          <h2>Customer Reviews</h2>
+          <p class="section-sub">Real outcomes from teams we’ve helped automate with n8n & Zapier.</p>
+
+          <article class="card review-featured">
+            <div class="review-header">
+              <img src="https://i.pravatar.cc/150?img=47" alt="Sarah Okoye" class="review-avatar" />
+              <div class="review-header-content">
+                <div class="stars" aria-label="5 out of 5 stars">
+                  <span>★★★★★</span>
+                </div>
+                <div class="review-meta">
+                  <strong>Sarah Okoye</strong> — Head of Growth, Acme Co.
+                </div>
+              </div>
+            </div>
+            <blockquote>
+              "We went from scattered tools to a resilient automation backbone. Lead response time dropped by 58% and ops tickets fell 35%. The mix of Zapier for quick wins and n8n for complex logic was perfect."
+            </blockquote>
+            <ul class="wins">
+              <li>−58% lead response time</li>
+              <li>−35% support escalations</li>
+              <li>Hours saved weekly across sales & ops</li>
+            </ul>
+          </article>
+
+          <div class="reviews-row">
+            <h3 class="reviews-sub">More client words</h3>
+            <div class="reviews-scroller" role="list">
+              <article class="review-card" role="listitem">
+                <div class="review-card-header">
+                  <img src="https://i.pravatar.cc/150?img=12" alt="Daniel F." class="review-avatar-small" />
+                  <div>
+                    <div class="stars" aria-label="5 out of 5 stars"><span>★★★★★</span></div>
+                    <div class="review-meta">Daniel F. — Ops Manager, DTC retail</div>
+                  </div>
+                </div>
+                <p>"Zapier rebuild cut our manual touches by ~70% in 2 weeks."</p>
+              </article>
+              <article class="review-card" role="listitem">
+                <div class="review-card-header">
+                  <img src="https://i.pravatar.cc/150?img=33" alt="Mai L." class="review-avatar-small" />
+                  <div>
+                    <div class="stars" aria-label="5 out of 5 stars"><span>★★★★★</span></div>
+                    <div class="review-meta">Mai L. — RevOps Lead, B2B SaaS</div>
+                  </div>
+                </div>
+                <p>"n8n pipelines gave us ownership; complex rules, no vendor lock‑in."</p>
+              </article>
+              <article class="review-card" role="listitem">
+                <div class="review-card-header">
+                  <img src="https://i.pravatar.cc/150?img=20" alt="Tolu A." class="review-avatar-small" />
+                  <div>
+                    <div class="stars" aria-label="5 out of 5 stars"><span>★★★★★</span></div>
+                    <div class="review-meta">Tolu A. — Support Lead, Fintech</div>
+                  </div>
+                </div>
+                <p>"They stabilized flaky zaps and added alerting. Night and day."</p>
+              </article>
+              <article class="review-card" role="listitem">
+                <div class="review-card-header">
+                  <img src="https://i.pravatar.cc/150?img=27" alt="Chloe R." class="review-avatar-small" />
+                  <div>
+                    <div class="stars" aria-label="5 out of 5 stars"><span>★★★★★</span></div>
+                    <div class="review-meta">Chloe R. — E‑com Director</div>
+                  </div>
+                </div>
+                <p>"Shopify→ERP sync finally works. Zero oversells during promos."</p>
+              </article>
+              <article class="review-card" role="listitem">
+                <div class="review-card-header">
+                  <img src="https://i.pravatar.cc/150?img=32" alt="Jorge P." class="review-avatar-small" />
+                  <div>
+                    <div class="stars" aria-label="5 out of 5 stars"><span>★★★★★</span></div>
+                    <div class="review-meta">Jorge P. — Sales Ops</div>
+                  </div>
+                </div>
+                <p>"Data sync between SFDC and HubSpot just works. No duplicates."</p>
+              </article>
+            </div>
+            <div class="scroll-nav">
+              <button class="btn btn-outline prev" type="button" aria-label="Previous reviews">‹</button>
+              <button class="btn btn-outline next" type="button" aria-label="Next reviews">›</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section">
+        <div class="container">
+          <h2>Simple Pricing</h2>
+          <div class="grid pricing">
+            <article class="card">
+              <h3>Starter</h3>
+              <p class="price">$1,500</p>
+              <ul>
+                <li>1–2 workflows</li>
+                <li>Core integrations</li>
+                <li>Basic error handling</li>
+                <li>Light documentation</li>
+              </ul>
+              <a href="#contact" class="btn btn-outline">Get Started</a>
+            </article>
+            <article class="card popular">
+              <h3>Growth</h3>
+              <p class="price">$3,500</p>
+              <ul>
+                <li>Up to 5 workflows</li>
+                <li>Advanced branching</li>
+                <li>Monitoring & alerts</li>
+                <li>Playbook documentation</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary">Most Popular</a>
+            </article>
+            <article class="card">
+              <h3>Scale</h3>
+              <p class="price">Custom</p>
+              <ul>
+                <li>Unlimited workflows</li>
+                <li>DB/warehouse pipelines</li>
+                <li>SLA & on‑call support</li>
+                <li>Team training</li>
+              </ul>
+              <a href="#contact" class="btn btn-outline">Request Quote</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section alt">
+        <div class="container">
+          <h2>FAQ</h2>
+          <div class="faq">
+            <details>
+              <summary>Why choose n8n vs Zapier?</summary>
+              <p>Zapier is fast for standard SaaS actions and simple paths. n8n shines for complex branching, custom code, ETL, and on‑prem/self‑host control. We recommend the right tool per workflow—and often use both.</p>
+            </details>
+            <details>
+              <summary>Can you work with our stack?</summary>
+              <p>Yes. We integrate most CRMs, marketing suites, data stores, and internal tools. For custom systems, we bridge via REST/GraphQL, webhooks, or queues.</p>
+            </details>
+            <details>
+              <summary>Do you offer maintenance?</summary>
+              <p>We provide monitoring, alerting, and break‑fix retainers. Options include monthly health checks and upgrade cycles.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Get a Free Consultation</h2>
+          <p class="section-sub">Tell us about your systems and goals. We’ll respond within one business day.</p>
+
+          <form id="contact-form" class="form" action="https://formspree.io/f/xwpdobqo" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="New RunLoop request" />
+            <input type="text" name="company" placeholder="Company" autocomplete="organization" required />
+            <div class="row">
+              <input type="text" name="name" placeholder="Your Name" autocomplete="name" required />
+              <input type="email" name="email" placeholder="Work Email" autocomplete="email" required />
+            </div>
+            <div class="row">
+              <input type="text" name="systems" placeholder="Key tools (e.g., HubSpot, Shopify)" />
+              <select name="platform">
+                <option value="auto" selected>Prefer: Auto‑recommend</option>
+                <option value="zapier">Prefer: Zapier</option>
+                <option value="n8n">Prefer: n8n</option>
+              </select>
+            </div>
+            <textarea name="message" rows="5" placeholder="What would you like to automate?" required></textarea>
+            <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <button type="submit" class="btn btn-primary">Send Request</button>
+            <p class="form-note">By submitting you agree to be contacted about your request.</p>
+            <output id="form-status" role="status" aria-live="polite"></output>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer">
+        <p>(c) <span id="year"></span> RunLoop. All rights reserved.</p>
+        <nav>
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="assets/main.js" defer></script>
+  </body>
+  </html>
