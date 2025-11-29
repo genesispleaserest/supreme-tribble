@@ -121,7 +121,7 @@ async function submitForm(event) {
     return;
   }
 
-  statusEl.textContent = 'Sending�';
+  statusEl.textContent = 'Sending...';
 
   try {
     const res = await fetch(endpoint, {
@@ -129,12 +129,23 @@ async function submitForm(event) {
       headers: { Accept: 'application/json' },
       body: formData,
     });
-    if (!res.ok) throw new Error('Bad response');
-    statusEl.textContent = 'Thanks�we will reach out shortly!';
+    if (!res.ok) {
+      let msg = 'Submission failed. Please email us directly.';
+      try {
+        const body = await res.json();
+        if (body?.errors && Array.isArray(body.errors)) {
+          msg = body.errors.map(e => e.message).join(' ');
+        }
+      } catch (e) {
+        // ignore parse errors
+      }
+      throw new Error(msg);
+    }
+    statusEl.textContent = 'Thanks - we will reach out shortly!';
     form.reset();
   } catch (err) {
     console.error(err);
-    statusEl.textContent = 'Submission failed. Please email us directly.';
+    statusEl.textContent = err.message || 'Submission failed. Please email us directly.';
   }
 }
 if (form) form.addEventListener('submit', submitForm);
@@ -153,4 +164,10 @@ function scrollByCard(dir = 1) {
 
 prevBtn?.addEventListener('click', () => scrollByCard(-1));
 nextBtn?.addEventListener('click', () => scrollByCard(1));
+
+
+
+
+
+
 
